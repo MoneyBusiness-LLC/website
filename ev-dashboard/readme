@@ -1,0 +1,5 @@
+Ben notes to self:
+1. To update this dashboard on https://moneybusinessllc.com/ev-dashboard/
+  a. Edit the local .jsx, test the build with: npm run dev
+  b. Build the local project with: npm run build
+  c. Copy the files from the /dist folder into the github folder /ev-dashboard and push changes
