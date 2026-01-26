@@ -5,7 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Service - Sign Up</title>
     <style>
-        * {
+        *.nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .dropbtn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0,0,0,0.95);
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            border-radius: 6px;
+            z-index: 100;
+            margin-top: 10px;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-weight: 500;
+            transition: background 0.2s ease;
+        }
+
+        .dropdown-content a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+ 
+        
+        {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -227,8 +285,18 @@
     <div class="hero">
         <nav>
             <div class="logo">MoneyBusiness</div>
-            <button class="sign-in-btn">Sign In</button>
-        </nav>
+            
+            <div class="nav-links">
+                <div class="dropdown">
+                <button class="dropbtn">Projects ▼</button>
+                <div class="dropdown-content">
+                    <a href="/ev-dashboard/index.html">EV Dashboard</a>
+                    <!-- Add more project links here if needed -->
+                </div>
+                </div>
+                <button class="sign-in-btn">Sign In</button>
+            </div>
+            </nav>
         
         <div class="hero-content">
             <h1>Track Insights, Find Partnerships, and more</h1>
