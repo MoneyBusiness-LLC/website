@@ -11,83 +11,7 @@
             gap: 20px;
         }
 
-        /* Dropdown wrapper */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        /* Dropdown button - match Sign In button style */
-        .dropbtn {
-            background: rgba(255, 255, 255, 0.2);
-            color: #fff;
-            border: none;
-            padding: 10px 24px; /* match sign-in-btn */
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 15px; /* match sign-in-btn */
-            font-weight: 600; /* match sign-in-btn */
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-
-        /* Hover effect */
-        .dropbtn:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
-        }
-
-        /* Dropdown menu */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 100%; /* show below the button */
-            left: 0;
-            background: rgba(0,0,0,0.95);
-            border-radius: 6px;
-            min-width: 160px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-            z-index: 100;
-            padding: 8px 0;
-        }
-
-        /* Links inside dropdown - match font weight/style */
-        .dropdown-content a {
-            display: block;
-            padding: 10px 24px; /* same as button width padding */
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 15px;
-            transition: background 0.2s ease;
-        }
-
-        .dropdown-content a:hover {
-            background: rgba(255,255,255,0.1);
-        }
-
-        /* Show dropdown when hovering over dropdown container (not just button!) */
-        .dropdown:hover .dropdown-content,
-        .dropdown:focus-within .dropdown-content {
-            display: block;
-        }
-
-        /* Ensure dropdown stays visible when moving mouse over content */
-        .dropdown-content {
-            pointer-events: auto;
-        }
-
-        /* Mobile fallback */
-        @media (max-width: 768px) {
-            .dropdown-content {
-                position: relative;
-                top: 0;
-                left: 0;
-                min-width: 100%;
-            }
-        }
-
-        *{
+*{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -310,14 +234,6 @@
             <div class="logo">MoneyBusiness</div>
 
             <div class="nav-links">
-                <div class="dropdown">
-                <button class="dropbtn">Projects ▼</button>
-                <div class="dropdown-content">
-                    <a href="/ev-dashboard/index.html">EV Dashboard</a>
-                    <!-- Add more projects here -->
-                </div>
-                </div>
-
                 <button class="sign-in-btn">Sign In</button>
             </div>
             </nav>
